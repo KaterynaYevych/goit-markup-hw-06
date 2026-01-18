@@ -4,12 +4,16 @@
   --color-iris: #4d5ae5;
   --color-ocean: #404bbf;
   --color-cloud: #f4f4fd;
+  --color-cornflower: #e7e9fc;
 
   --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
   --color-navy-blue: #2e2f42;
   --color-light-slate: #8e8f99;
   --color-slate: #434455;
+
   --color-navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --color-grey: rgb(46, 47, 66, 0.7);
 
   --anim-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -107,7 +111,7 @@ img {
 }
 
 .section-title {
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -117,7 +121,7 @@ img {
 }
 
 .item-title {
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -134,8 +138,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--color-white);
+  background-color: var(--color-iris);
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
@@ -150,13 +154,13 @@ img {
 
 .btn:hover,
 .btn:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 /* #endregion */
 
 /* #region Logo */
 .logo {
-  color: #4d5ae5;
+  color: var(--color-iris);
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -166,11 +170,11 @@ img {
 }
 
 .light {
-  color: #f4f4fd;
+  color: var(--color-cloud);
 }
 
 .dark {
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 
 .header-logo {
@@ -186,14 +190,14 @@ img {
 
 /* #region Header */
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--color-cornflower);
   box-shadow:
     0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
   position: sticky;
   top: 0px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   z-index: 999;
 }
 
@@ -217,7 +221,7 @@ img {
   display: block;
   font-size: 16px;
   font-weight: 500;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 
 .header-item-link {
@@ -227,14 +231,14 @@ img {
 }
 
 .header-item:first-child {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 .header-item .current:after {
   content: "";
   height: 4px;
   width: 100%;
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -244,7 +248,7 @@ img {
 .header-item-link:hover,
 .header-item-link:focus,
 .header-item-link:active {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 .header-contacs {
@@ -271,7 +275,7 @@ img {
 
 .contacts-item-link:hover,
 .contacts-item-link:focus {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 /* #endregion */
@@ -279,7 +283,7 @@ img {
 /* #region Hero */
 .hero {
   max-width: 1440px;
-  background-color: #2e2f42;
+  background-color: var(--color-navy-blue);
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpeg);
@@ -292,7 +296,7 @@ img {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--color-white);
 
   text-align: center;
   font-size: 56px;
@@ -320,8 +324,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
+  background-color: var(--color-cloud);
+  border: 1px solid var(--color-light-slate);
   border-radius: 4px;
   height: 112px;
   margin-bottom: 8px;
@@ -331,7 +335,7 @@ img {
 
 /* #region Team */
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--color-cloud);
 }
 
 .team-list {
@@ -342,7 +346,7 @@ img {
 
 .team-item {
   flex-basis: calc((100% - 72px) / 4);
-  background-color: #ffffff;
+  background-color: var(--color-white);
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -352,7 +356,7 @@ img {
 
 .team-item:hover,
 .team-item:focus {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .person {
@@ -374,7 +378,7 @@ img {
 }
 
 .social-link {
-  background-color: #4d5ae5;
+  background-color: var(--color-iris);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -386,16 +390,16 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .team-item:hover .social-link,
 .team-item:focus .social-link {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .social-icon {
-  fill: #f4f4fd;
+  fill: var(--color-cloud);
 }
 /* #endregion */
 
@@ -424,8 +428,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  color: #f4f4fd;
-  background-color: #4d5ae5;
+  color: var(--color-cloud);
+  background-color: var(--color-iris);
   padding: 40px 32px;
   width: 100%;
   height: 100%;
@@ -448,14 +452,14 @@ img {
 
 .portfolio-name {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--color-cornflower);
   border-top: none;
 }
 /* #endregion */
 
 /* #region Footer styles */
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--color-navy-blue);
   padding: 100px 0;
 }
 
@@ -494,7 +498,7 @@ img {
 }
 
 .footer-social-link {
-  background-color: #4d5ae5;
+  background-color: var(--color-iris);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -511,7 +515,7 @@ img {
 }
 
 .social-icon {
-  fill: #f4f4fd;
+  fill: var(--color-cloud);
 }
 
 .btn-footer {
@@ -596,7 +600,7 @@ img {
   position: fixed;
   inset: 0;
 
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: var(--color-navy-blue-modal);
   z-index: 9999;
 
   opacity: 0;
@@ -625,7 +629,7 @@ img {
   height: 24px;
 
   padding: 0px;
-  background-color: #e7e9fc;
+  background-color: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: var(--color-navy-blue);
@@ -658,7 +662,7 @@ img {
   min-height: 584px;
   transform: translate(-50%, -50%);
 
-  background-color: #fcfcfc;
+  background-color: var(--color-dairy);
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -742,7 +746,7 @@ img {
   border-radius: 4px;
   resize: none;
   transition: fill var(--anim-main);
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--color-navy-blue-modal);
   background-color: transparent;
   outline: transparent;
 
