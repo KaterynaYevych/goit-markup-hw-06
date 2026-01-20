@@ -20,30 +20,6 @@
 }
 /* #endregion */
 
-/* #region Advantages */
-
-.adv-list {
-  display: flex;
-  gap: 24px;
-}
-
-.adv-item {
-  flex-basis: calc((100% - 72px) / 4);
-}
-
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-cloud);
-  border: 1px solid var(--color-light-slate);
-  border-radius: 4px;
-  height: 112px;
-  margin-bottom: 8px;
-}
-
-/* #endregion */
-
 /* #region Team */
 .team {
   background-color: var(--color-cloud);
