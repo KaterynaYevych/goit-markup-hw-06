@@ -1,15 +1,5 @@
 /* #region Common styles (повторювані стилі)*/
-
-.section-title {
-  color: var(--color-navy-blue);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-
+/* не працює селектор тому що змінються айтеми в сексціяї  */
 .item-title {
   color: var(--color-navy-blue);
   font-size: 20px;
@@ -20,32 +10,6 @@
   margin-bottom: 8px;
 }
 
-.btn {
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  color: var(--color-white);
-  background-color: var(--color-iris);
-  border: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
-  min-width: 169px;
-  height: 56px;
-
-  padding: 16px 32px;
-  border-radius: 4px;
-  margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: var(--color-ocean);
-}
 /* #endregion */
 
 /* #region Logo */
@@ -53,35 +17,6 @@
 .footer-logo {
   margin-bottom: 16px;
   display: inline-block;
-}
-/* #endregion */
-
-/* #region Hero */
-.hero {
-  max-width: 1440px;
-  background-color: var(--color-navy-blue);
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpeg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  padding: 188px 0;
-  margin: auto;
-}
-
-.hero-title {
-  color: var(--color-white);
-
-  text-align: center;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-
-  max-width: 496px;
-  margin: 0 auto 48px;
 }
 /* #endregion */
 

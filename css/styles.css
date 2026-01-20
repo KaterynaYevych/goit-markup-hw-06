@@ -146,6 +146,43 @@ h2 {
   }
 }
 
+.section-title {
+  color: var(--color-navy-blue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.btn {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  min-width: 169px;
+  height: 56px;
+
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-ocean);
+}
+
 /* #endregion */
 
 /* #region Logo */
@@ -434,4 +471,59 @@ h2 {
   fill: var(--color-cloud);
 }
 
+/* #endregion */
+
+/* #region Hero */
+.hero {
+  max-width: 320px;
+  background-color: var(--color-navy-blue);
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 72px 0;
+  margin: auto;
+}
+
+.hero-title {
+  color: var(--color-white);
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  max-width: 216px;
+  margin: 0 auto 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding: 112px 0;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+
+    max-width: 496px;
+    margin: 0 auto 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+}
 /* #endregion */
